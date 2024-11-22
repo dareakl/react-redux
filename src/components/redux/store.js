@@ -1,5 +1,6 @@
-import { createStore } from "redux";
-import pizzaReducer from "./pizza/PizzaReducers";
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "./rootReducer";
+import logger from "redux-logger";
 
-const store = createStore(pizzaReducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 export default store;
