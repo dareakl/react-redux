@@ -4,7 +4,8 @@ import { Provider } from "react-redux";
 import store from "./components/redux/store";
 // import HookContainer from "./components/HooksContainer";
 import BurgerBox from "./components/BurgerBox";
-import CustomerChoice from "./components/CustomerChoice";
+//import CustomerChoice from "./components/CustomerChoice";
+import ProductsConatiner from "./components/ProductsConatiner";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <PizzaBox />
       <BurgerBox /> */}
       {/* <HookContainer /> */}
-      <CustomerChoice />
+      {/* <CustomerChoice /> */}
+      <ProductsConatiner />
     </Provider>
   );
 }
